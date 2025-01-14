@@ -11,7 +11,7 @@ const infoText = {
       textCopied: "Copied!",
   },
   es: {
-      title: "Contactame",
+      title: "Contáctame",
       copy: "Copiar",
       textCopied: "¡Copiado!",
   }
