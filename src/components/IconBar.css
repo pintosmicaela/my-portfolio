@@ -1,32 +1,83 @@
 .icon-bar {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  gap: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .icon-lang{
-  position: absolute;
-  display: flex;
-  top: 10px;
-  left: 20px;
-}
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 20px;
+    border: none;
+    background: none;
+  }
 
-.icon-lang, .icon, .mail-button{
-  font-size: 35px;
-  color: #67917B;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+  .icon-lang,
+  .icon {
+    font-size: 35px;
+    color: #67917B;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
   
-.icon-lang:hover, .icon:hover, .mail-button:hover{
-  transform: scale(1.2); 
-  color: #67917B; 
+  .icon-lang:hover,
+  .icon:hover {
+    transform: scale(1.2); 
+    color: #67917B; 
+  }
+
+.email-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+} 
+
+.email-panel{
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.mail-button, .icon-lang{
+.close-email{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
   border: none;
   background: none;
+}
+
+.text-mail{
+  font-style: italic;
+  
+}
+
+.copy-button{
+  height: auto;
+  background: #67917B;
+  color: #ffffff;
+  background: #67917B;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
 }
 
 @keyframes fadeInOut {

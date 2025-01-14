@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaEnvelopeOpen} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope} from 'react-icons/fa';
 import { useLanguage } from '../LanguageContext';
 import './IconBar.css';
-import { VscClose } from 'react-icons/vsc';
 
 const infoText = {
   en: {
@@ -32,7 +31,7 @@ const IconBar = () => {
     try {
       await navigator.clipboard.writeText(mail);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 2000); // Mensaje temporal de copiado
     } catch (error) {
       console.error("Error al copiar texto:", error);
     }
@@ -40,10 +39,20 @@ const IconBar = () => {
 
   return (
     <div className="icon-bar">
-      <a href="https://linkedin.com/in/mlpintos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <a 
+        href="https://linkedin.com/in/mlpintos" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
         <FaLinkedin className="icon" />
       </a>
-      <a href="https://github.com/pintosmicaela" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <a 
+        href="https://github.com/pintosmicaela" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
         <FaGithub className="icon" />
       </a>
       <button className="mail-button" onClick={togglePanel}>
@@ -52,15 +61,12 @@ const IconBar = () => {
       {isOpen && (
         <div className='email-modal'>
           <div className='email-panel'>
-            <button onClick={togglePanel} className="close-email" aria-label="Mail">
-              <VscClose className='icon'/>
+            <button onClick={togglePanel} className="close-email" aria-label="Cerrar panel">
+              X
             </button>
             <h2>{textMail.title}</h2> 
             <div className="email-info">
-              <FaEnvelopeOpen className='icon-mail'/>
-              <span className='text-mail'>
-                <strong> micaelalujanpintos@gmail.com</strong>
-              </span>
+              <strong className='text-mail'>micaelalujanpintos@gmail.com</strong>
               <button onClick={copyToClipboard} className='copy-button'> {textMail.copy} </button>
               {copied && <p className='text-copied'> {textMail.textCopied}</p>}
             </div>

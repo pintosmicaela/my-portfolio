@@ -1,3 +1,5 @@
+/*  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&display=swap');
@@ -5,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+ /*borel manuescrita */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,7 +22,17 @@ code {
     monospace;
 }
 
-body, .skills, .projects, .hero{
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body,
+.skills,
+.projects,
+.hero {
   background-image: url("../public/images/background/small-yellow-flowers-table.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -27,85 +40,17 @@ body, .skills, .projects, .hero{
   background-size: cover;
 }
 
-body, .projects, .skills, .text-cv, .hero-blur,
-.footer, .cv, .email-modal, .copy-button{
+.projects,
+.skills,
+.text-cv,
+.hero-blur,
+.footer,
+.cv,
+.email-modal,
+.copy-button{
   font-size: large;
   font-family: 'Red Hat Display';
   color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-.copy-button, .close-email, .close-panel, .cv-button{
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-.cv-modal, .email-modal{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-} 
-
-.cv-panel, .email-panel{
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  position: relative;
-  color: #333;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.close-panel, .close-email{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-}
-
-.email-info{
-  align-items: center;
-  margin-top: 10px;
-  gap: 8px;
-}
-
-.icon-mail{
-  width: 20px;
-  height: 20px;
-  color: #67917B;
-  display: inline-block;
-}
-
-.text-mail{
-  font-size: 18px;
-  align-items: center;
-}
-
-.email-info .copy-button{
-  width: 50%;
-  margin: 20px 0;
-}
-
-.copy-button{
-  height: auto;
-  background: #67917B;
-  color: #ffffff;
-  background: #67917B;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -115,19 +60,15 @@ body, .projects, .skills, .text-cv, .hero-blur,
   align-items: center;
 }
 
-.skills, .hero-blur{
-  backdrop-filter: blur(10px);
-  height: auto;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .hero-blur{
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   border-radius: 0; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -186,17 +127,52 @@ body, .projects, .skills, .text-cv, .hero-blur,
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  background: none;
+  border: none;
+  
 }
 
-.cv-button:hover{
-  transform: scale(1.2); 
+.cv-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}  
+
+.cv-panel{
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-panel{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .button-panel{
   text-decoration: none;
   color: #333;
-  font-size: 20px;
+  font-size: 14px;
   margin: 5px;
   display: inline-block;
   text-align: center;
@@ -205,16 +181,6 @@ body, .projects, .skills, .text-cv, .hero-blur,
 
 .button-panel:hover{
   text-decoration: underline;
-}
-
-.icon-cv{
-  transition: transform 0.3s ease;
-  font-size: 18px;
-  color: #67917B;
-}
-
-.icon-cv:hover{
-  transform: scale(1.2); 
 }
 
 .myphoto {
@@ -229,20 +195,42 @@ body, .projects, .skills, .text-cv, .hero-blur,
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .text-cv, .myphoto {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .text {
+    margin-bottom: 20px;
+  }
+}
+
 .skills {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center; 
+  /* padding: 20px; */ 
   box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .icon-container {
   display: grid;
-  grid-template-columns: repeat(8, auto); 
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+  grid-template-columns: repeat(8, auto); /* 5 columnas con ancho automático */
+  gap: 20px; /* Espaciado entre los íconos */
+  justify-content: center; /* Centra las filas horizontalmente */
+  margin-top: 20px; /* Espaciado superior */
 }
 
 .skill-icon {
@@ -250,14 +238,26 @@ body, .projects, .skills, .text-cv, .hero-blur,
 }
 
 .skill-icon svg {
-  font-size: 4rem; 
-  color: #555; 
+  font-size: 4rem; /* Tamaño del ícono */
+  color: #555; /* Color del ícono */
 }
 
 .skill-icon p {
-  margin-top: 5px;
-  font-size: 1rem;
-  color: #333;
+  margin-top: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 1rem; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    grid-template-columns: repeat(3, auto); /* Cambiar a 3 columnas */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-container {
+    grid-template-columns: repeat(2, auto); /* Cambiar a 2 columnas */
+  }
 }
 
 section {
@@ -283,7 +283,7 @@ section {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px; /* Más espacio entre las cards */
   justify-content: center;
 }
 
@@ -291,15 +291,15 @@ section {
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 600px; 
-  height: 350px;
+  width: 600px; /* Aumento el ancho de la card para más espacio */
+  height: 350px; /* Aumento la altura de la card para más espacio */
   border-radius: 15px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .project-item-image {
-  width: 50%;
+  width: 50%; /* Reducir el tamaño de la imagen al 50% */
   height: 100%;
   object-fit: cover;
   outline: 2px solid white;
@@ -310,14 +310,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px; 
-  width: 50%;
-  background-color: rgb(255, 255, 255);
-  z-index: 1;
+  padding: 25px; /* Un poco más de espacio dentro */
+  width: 50%; /* Aumento el espacio del contenido al 50% */
+  background-color: rgb(255, 255, 255); /* Fondo blanco dentro de la card */
+  z-index: 1;  /* Asegura que el fondo blanco esté sobre la imagen */
 }
 
 .project-item-name {
-  font-size: 20px;
+  font-size: 20px; /* Aumento el tamaño del nombre del proyecto */
   font-weight: bold;
   margin: 0;
   background: rgba(255, 255, 255, 0.7);
@@ -327,12 +327,12 @@ section {
 }
 
 .project-item-description {
-  font-size: 18px;
+  font-size: 18px; /* Aumento el tamaño de la descripción */
   color: #666;
   margin-top: 20px;
   margin-bottom: 20px;
-  flex-grow: 1;
-  text-align: left;
+  flex-grow: 1; /* Hace que la descripción ocupe más espacio */
+  text-align: justify;
 }
 
 .project-item-action {
@@ -354,36 +354,6 @@ section {
   height: 1em;
   background-color: black;
   animation: blink 1s step-end infinite;
-}
-
-@media (max-width: 768px) {
-  .icon-container {
-    grid-template-columns: repeat(3, auto); /* Cambiar a 3 columnas */
-  }
-}
-
-@media (max-width: 480px) {
-  .icon-container {
-    grid-template-columns: repeat(2, auto); /* Cambiar a 2 columnas */
-  }
-}
-
-
-@media (max-width: 768px) {
-  .content {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .text-cv, .myphoto {
-    width: 100%; 
-    text-align: center;
-  }
-
-  .text {
-    margin-bottom: 20px;
-  }
 }
 
 @keyframes blink {

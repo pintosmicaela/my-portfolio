@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaFileDownload  } from 'react-icons/fa';
 import { useLanguage } from '../LanguageContext';
-import { VscClose } from 'react-icons/vsc';
 
 const url = {
   es: "https://drive.google.com/file/d/1uuMjK0yt7hgwBi3xYHpmVkYQWKMluRy7/view?usp=sharing",
@@ -50,15 +49,15 @@ const About = () => {
               <div className='cv-modal'>
                 <div className='cv-panel'>
                   <button onClick={togglePanel} className="close-panel" aria-label="Cerrar panel">
-                    <VscClose className='icon'/>
+                    X
                   </button>
                   <h2>Curriculum Vitae</h2> 
                   <div className="cv-buttons">
                     <a href={url.es} className="button-panel" target="_blank" rel="noopener noreferrer">
-                      <FaFileDownload  className="icon-cv" />Español
+                      <FaFileDownload  className="icon" />Español
                     </a>
                     <a href={url.en} className="button-panel" target="_blank" rel="noopener noreferrer">
-                      <FaFileDownload  className="icon-cv" />English
+                      <FaFileDownload  className="icon" />English
                     </a>
                   </div>
                 </div>

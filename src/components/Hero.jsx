@@ -4,9 +4,13 @@ import { useLanguage } from '../LanguageContext';
 
 const textHero = {
   en: {
+    welcome: "Hello, I'm ",
+    name: "Micaela Pintos",
     minitext: " Full Stack Developer | Passionate about building impactful solutions",
   },
   es: {
+    welcome: "Hola, soy ",
+    name: "Micaela Pintos",
     minitext: " Desarrolladora Full Stack | Apasionada por construir soluciones impactantes",
   }
 }
@@ -17,7 +21,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-blur">
-        <h1><span className="highlight">Micaela Luján Pintos</span></h1>
+        <h1><span className="highlight">{textToShow.name}</span></h1>
         <TypingText text={textToShow.minitext} speed={30} />
       </div>
     </div>
