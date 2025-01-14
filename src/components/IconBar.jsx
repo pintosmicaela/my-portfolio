@@ -1,10 +1,13 @@
-import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
+/* import React from 'react';
+import { FaFacebook, FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa';
 import './IconBar.css'; // Archivo CSS para los estilos
 
 const IconBar = () => {
   return (
     <div className="icon-bar">
+      <a href="niesningunapagin" target="_blank" rel="noopener noreferrer">
+        <FaGlobe  className="icon" />
+      </a>
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
         <FaFacebook className="icon" />
       </a>
@@ -19,3 +22,4 @@ const IconBar = () => {
 };
 
 export default IconBar;
+ */
