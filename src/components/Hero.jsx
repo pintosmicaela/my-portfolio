@@ -1,12 +1,25 @@
 import React from 'react';
 import TypingText from '../TypingText';
+import { useLanguage } from '../LanguageContext';
+
+const textHero = {
+  en: {
+    minitext: " Full Stack Developer | Passionate about building impactful solutions",
+  },
+  es: {
+    minitext: " Desarrolladora Full Stack | Apasionada por construir soluciones impactantes",
+  }
+}
 
 const Hero = () => {
+  const {language} = useLanguage();
+  const textToShow = textHero[language];
   return (
     <div className="hero">
-      <h1>Hola, soy <span className="highlight" style={{ fontFamily: "'Caveat', sans-serif" }}>Micaela Pintos</span></h1>
-      <TypingText text= " Desarrolladora Full Stack | Apasionada por construir soluciones impactantes. " speed={30}/>
-      <a href="#projects" className="cta">Ver mis proyectos</a>
+      <div className="hero-blur">
+        <h1><span className="highlight">Micaela Luján Pintos</span></h1>
+        <TypingText text={textToShow.minitext} speed={30} />
+      </div>
     </div>
   );
 };

@@ -1,20 +1,37 @@
-
 .icon-bar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 15px;
-  }
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.icon-lang{
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 20px;
+}
+
+.icon-lang, .icon, .mail-button{
+  font-size: 35px;
+  color: #67917B;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
   
-  .icon {
-    font-size: 24px;
-    color: #c7baba;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .icon:hover {
-    transform: scale(1.2); /* Agranda el ícono */
-    color: #ffffff; /* Cambia el color del ícono */
-  }
-  
+.icon-lang:hover, .icon:hover, .mail-button:hover{
+  transform: scale(1.2); 
+  color: #67917B; 
+}
+
+.mail-button, .icon-lang{
+  border: none;
+  background: none;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

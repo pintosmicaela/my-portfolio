@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const TypingText = ({ text, speed = 100 }) => {
   const [displayedText, setDisplayedText] = useState("");
-  const [showCursor, setShowCursor] = useState(true); // Estado para mostrar/ocultar el cursor
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
+    setDisplayedText("");
+    setShowCursor(true);
+
     let index = 0;
     const interval = setInterval(() => {
         setShowCursor(false);
@@ -16,13 +19,11 @@ const TypingText = ({ text, speed = 100 }) => {
         }
     }, speed);
 
-    return () => clearInterval(interval); // Limpiar el intervalo al desmontar
+    return () => clearInterval(interval);
   }, [text, speed]);
 
-  return    <p>
-                {displayedText}
-                {showCursor && <span className="typing-cursor"></span>}
-            </p>;
+  return <p>{displayedText}
+            {showCursor && <span className="typing-cursor"></span>}</p>;
 };
 
 export default TypingText;
