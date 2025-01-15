@@ -13,13 +13,13 @@ const textAboutme = {
     title: "About me",
     about: "I am an advanced Computer Engineering student at the National University of the South (UNS, Bahía Blanca) motivated by continuous learning and prepared for new challenges that arise along the way.",
     aboutplus: "I am committed to my professional and personal growth, prepared to contribute my knowledge and skills while acquiring new tools.",
-    tools: "I have a positive attitude and am always willing to collaborate and learn. I also have strong communication skills, which allow me to express ideas clearly and connect with others. I strive to fulfill my responsibilities efficiently through organization, commitment, and a serious approach to work.",
+    tools: "I have a positive attitude and I am always willing to collaborate and learn. I also have strong communication skills, which allow me to express ideas clearly and connect with others. I strive to fulfill my responsibilities efficiently through organization, commitment, and a serious approach to work.",
   },
   es: {
     title: "Sobre mí",
     about: "Soy estudiante avanzada de Ingeniería en Computación en la Universidad Nacional del Sur (UNS, Bahía Blanca) motivada por el aprendizaje continuo y preparada para enfrentar los desafíos que surjan en el camino.",
     aboutplus: "Estoy comprometida con mi desarrollo profesional y personal, dispuesta a aportar mis conocimientos y habilidades, al mismo tiempo que adquiero nuevas herramientas.",
-    tools: "Soy una persona con una actitud positiva, siempre dispuesta a colaborar y aprender. Además, cuento con habilidades de comunicación efectiva, lo que me permite expresar ideas de manera clara y conectar con los demás. Me esfuerzo por cumplir con mis responsabilidades de manera eficiente por medio de la organización, compromiso y la seriedad para el trabajo.",
+    tools: "Soy una persona con una actitud positiva, siempre dispuesta a colaborar y aprender. Además, cuento con habilidades de comunicación efectivas, lo que me permite expresar ideas de manera clara y conectar con los demás. Me esfuerzo por cumplir con mis responsabilidades de manera eficiente por medio de la organización, compromiso y la seriedad para el trabajo.",
   },
 }
 

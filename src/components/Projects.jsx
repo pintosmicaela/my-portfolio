@@ -10,7 +10,7 @@ const projectsData = {
   en: [
     {
       name: "Portfolio",
-      description: "This portfolio is built using JavaScript, with React for the frontend and Node.js for the backend.",
+      description: "This portfolio is built with JavaScript, with React for the frontend and Node.js for the backend.",
       link: "https://github.com/pintosmicaela/my-portfolio",
       image: "/images/projects/web/brownWeb.png", 
       more: "See more",
@@ -54,7 +54,7 @@ const projectsData = {
     },
     {
       name: "Procesamiento de imagenes",
-      description: "Proyecto Final: Los objetivos son detectar la línea del horizonte y rotarla con respecto a dicha línea, e identificar diferentes tipos de galletitas.",
+      description: "Proyecto Final: Los objetivos son detectar la línea del horizonte y rotarla con respecto a dicha línea e identificar diferentes tipos de galletitas.",
       link: "https://github.com/pintosmicaela/img-processing-final",
       image: "/images/projects/photo/whitePhoto.png", 
       more: "Ver más",
