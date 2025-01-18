@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGlobe } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
-import './components/IconBar.css';
+import './IconBar.css';
 
 const LanguageSwitcher = () => {
   const { toggleLanguage } = useLanguage();

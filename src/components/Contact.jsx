@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaEnvelopeOpen} from 'react-icons/fa';
-import { useLanguage } from '../LanguageContext';
-import './IconBar.css';
+import { useLanguage } from './../LanguageContext';
+import './../IconBar.css';
 import { VscClose } from 'react-icons/vsc';
 
 const infoText = {

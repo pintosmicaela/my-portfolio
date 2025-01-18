@@ -1,6 +1,6 @@
 import React from 'react';
-import TypingText from '../TypingText';
-import { useLanguage } from '../LanguageContext';
+import TypingText from './../TypingText';
+import { useLanguage } from './../LanguageContext';
 
 const textHero = {
   en: {
